@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LYONIQ | The Future of Silence</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(to bottom, #001c3d, #000000);
+            color: white;
+            text-align: center;
+            padding: 3rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+        }
+        .language-switch {
+            margin: 2rem 0;
+        }
+        .language-switch button {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .section {
+            margin-top: 4rem;
+            font-size: 1.2rem;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            const en = document.getElementById('patents-en');
+            const gr = document.getElementById('patents-gr');
+            en.style.display = lang === 'en' ? 'block' : 'none';
+            gr.style.display = lang === 'gr' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="switchLanguage('gr')">
+    <h1>LYONIQ™</h1>
+    <h2>The Future of Silence</h2>
+
+    <div class="language-switch">
+        <button onclick="switchLanguage('gr')">Ελληνικά</button>
+        <button onclick="switchLanguage('en')">English</button>
+    </div>
+
+    <div class="section" id="patents-en" style="display:none;">
+        <h3>Patents</h3>
+        <p>🚧 Under construction 🚧</p>
+    </div>
+    <div class="section" id="patents-gr" style="display:none;">
+        <h3>Πατέντες</h3>
+        <p>🚧 Υπό κατασκευή 🚧</p>
+    </div>
+</body>
+</html>
